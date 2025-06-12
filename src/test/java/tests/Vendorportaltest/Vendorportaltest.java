@@ -1,36 +1,34 @@
-import FlightReservation.AbstractPage;
+package tests.Vendorportaltest;
+
 import VendorPortal.Dashboardpage;
 import VendorPortal.LoginPage;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import tests.Abstarcttest;
 
-public class Vendorportaltest{
+public class Vendorportaltest extends Abstarcttest {
 
-    private WebDriver driver;
+
+    private LoginPage loginPage;
+    private Dashboardpage dashboardpage;
 
     @BeforeTest
-    public void setDriver(){
+    public void setpageobjects(){
         //this is driver setup
-        WebDriverManager.chromedriver().setup();
-        this.driver=new ChromeDriver();
+        this.loginPage= new LoginPage(driver);
+        this.dashboardpage=new Dashboardpage(driver);
 
     }
     @Test
     public void loginTest(){
-        LoginPage loginpage=new LoginPage(driver);
-        loginpage.goTo("https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html");
-        Assert.assertTrue(loginpage.isAt());
-        loginpage.login("sam","sam");
+        loginPage.goTo("https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html");
+        Assert.assertTrue(loginPage.isAt());
+        loginPage.login("sam","sam");
     }
 
     @Test(dependsOnMethods = "loginTest")
     public void dashboardtest(){
-        Dashboardpage dashboardpage=new Dashboardpage(driver);
         Assert.assertTrue(dashboardpage.isAt());
 
         // finance metric
@@ -42,13 +40,14 @@ public class Vendorportaltest{
         //order history
         dashboardpage.SearchorderHistoryBy("adams");
         Assert.assertEquals(dashboardpage.GetSearchResultsCount(),8);
-        //
-        dashboardpage.logoutportal();
 
     }
-    @AfterTest
-    public void quitdriver(){
-        driver.quit();
+    @Test(dependsOnMethods = "dashboardtest")
+    public void logouttest()
+    {
+        dashboardpage.logoutportal();
+        Assert.assertTrue(loginPage.isAt());
     }
+
 
 }

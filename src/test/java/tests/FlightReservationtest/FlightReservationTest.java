@@ -1,29 +1,27 @@
+package tests.FlightReservationtest;
+
 import FlightReservation.*;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import tests.Abstarcttest;
 
-public class FlightReservationTest {
+public class FlightReservationTest extends Abstarcttest {
     private static final Logger log = LoggerFactory.getLogger(FlightReservationTest.class);
-    private WebDriver driver;
     private String noofpassenger;
     private String expectedprice;
 
+
+
+
     @Parameters({"noofpassengers","expectedprice"})
     @BeforeTest
-    public void setDriver(String noofpassengers,String expectedprice){
+    public void Setparameter(String noofpassengers,String expectedprice){
         this.noofpassenger =noofpassengers;
         this.expectedprice=expectedprice;
-        //this is driver setup
-        WebDriverManager.chromedriver().setup();
-        this.driver=new ChromeDriver();
 
     }
 
@@ -68,11 +66,6 @@ public class FlightReservationTest {
         Assert.assertEquals("Total Price", flightConfirmationpage.getBookingConfirmationId());
         Assert.assertEquals(expectedprice, flightConfirmationpage.getTotalPrice());
 
-    }
-    @AfterTest
-    public void quitdriver(){
-
-        this.driver.quit();
     }
 
 
