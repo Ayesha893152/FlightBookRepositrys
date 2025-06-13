@@ -4,7 +4,7 @@
         <parameter name="noofpassengers" value="1"/>
         <parameter name="expectedprice" value="$89 USD"/>
         <classes>
-            <class name="FlightReservationtest.FlightReservationTest"/>
+            <class name="tests.FlightReservationtest.FlightReservationTest"/>
         </classes>
     </test>
 
@@ -12,7 +12,7 @@
         <parameter name="noofpassengers" value="2"/>
         <parameter name="expectedprice" value="$89 USD"/>
         <classes>
-            <class name="FlightReservationtest.FlightReservationTest"/>
+            <class name="tests.FlightReservationtest.FlightReservationTest"/>
         </classes>
     </test>
 
@@ -20,7 +20,7 @@
         <parameter name="noofpassengers" value="3"/>
         <parameter name="expectedprice" value="$89 USD"/>
         <classes>
-            <class name="FlightReservationtest.FlightReservationTest"/>
+            <class name="tests.FlightReservationtest.FlightReservationTest"/>
         </classes>
     </test>
 
@@ -28,7 +28,7 @@
         <parameter name="noofpassengers" value="4"/>
         <parameter name="expectedprice" value="$89 USD"/>
         <classes>
-            <class name="FlightReservationtest.FlightReservationTest"/>
+            <class name="tests.FlightReservationtest.FlightReservationTest"/>
         </classes>
     </test>
 </suite>

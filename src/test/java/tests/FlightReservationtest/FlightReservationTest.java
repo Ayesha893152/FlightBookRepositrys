@@ -63,7 +63,7 @@ public class FlightReservationTest extends Abstarcttest {
     public void flightReservationConfirmationTest(){
         FlightConfirmationpage flightConfirmationpage=new FlightConfirmationpage(driver);
         Assert.assertTrue(flightConfirmationpage.isAt());
-        Assert.assertEquals("Total Price", flightConfirmationpage.getBookingConfirmationId());
+        Assert.assertEquals(flightConfirmationpage.getBookingConfirmationId(), "Total Price");
         Assert.assertEquals(expectedprice, flightConfirmationpage.getTotalPrice());
 
     }
