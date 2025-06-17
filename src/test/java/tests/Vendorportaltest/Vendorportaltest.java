@@ -24,7 +24,7 @@ public class Vendorportaltest extends Abstarcttest {
         //this is driver setup
         this.loginPage= new LoginPage(driver);
         this.dashboardpage=new Dashboardpage(driver);
-        this.testdata = JsonUtil.getTestdata(testDataPath);
+        this.testdata = JsonUtil.getTestdata(testDataPath,VendorPortaltestdata.class);
 
     }
     @Test

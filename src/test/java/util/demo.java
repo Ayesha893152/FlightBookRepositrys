@@ -10,7 +10,7 @@ public class demo {
        System.out.println(content);
 
 
-    }*/
+    }
 
     public static void main(String[]args){
         VendorPortaltestdata testdata= null;
@@ -20,7 +20,7 @@ public class demo {
             throw new RuntimeException(e);
         }
         System.out.println(testdata.monthlyearning());
-    }
+    }*/
 
 
 

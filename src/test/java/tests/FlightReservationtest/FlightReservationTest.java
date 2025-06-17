@@ -1,6 +1,8 @@
 package tests.FlightReservationtest;
 
 import FlightReservation.*;
+import VendorPortal.model.VendorPortaltestdata;
+import VendorPortal.model.flightreservationtestdata;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
@@ -8,21 +10,17 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import tests.Abstarcttest;
+import util.JsonUtil;
 
 public class FlightReservationTest extends Abstarcttest {
     private static final Logger log = LoggerFactory.getLogger(FlightReservationTest.class);
-    private String noofpassenger;
-    private String expectedprice;
+    private flightreservationtestdata testdata;
 
-
-
-
-    @Parameters({"noofpassengers","expectedprice"})
+    @Parameters("testDataPath")
     @BeforeTest
-    public void Setparameter(String noofpassengers,String expectedprice){
-        this.noofpassenger =noofpassengers;
-        this.expectedprice=expectedprice;
-
+    public void Setparameter(String testDataPath)
+    {
+        this.testdata= JsonUtil.getTestdata(testDataPath,flightreservationtestdata.class);
     }
 
     @Test
@@ -30,10 +28,9 @@ public class FlightReservationTest extends Abstarcttest {
         RegistrationPage registrationPage=new RegistrationPage(driver);
         registrationPage.goTo("https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html");
         Assert.assertTrue(registrationPage.isAt());
-
-        registrationPage.enteruserdetails("selenium","docker");
-        registrationPage.enterusercredentials("selenium@docker.com","docker");
-        registrationPage.enteraddress("123 non main street","atlanata","30001");
+        registrationPage.enteruserdetails(testdata.firstname(),testdata.lastname());
+        registrationPage.enterusercredentials(testdata.email(),testdata.password());
+        registrationPage.enteraddress(testdata.street(),testdata.city(),testdata.zip());
         registrationPage.register();
 
     }
@@ -41,6 +38,7 @@ public class FlightReservationTest extends Abstarcttest {
     public void registrationconfirmationTest(){
         RegistrationConfirmation registrationConfirmation=new RegistrationConfirmation(driver);
         Assert.assertTrue(registrationConfirmation.isAt());
+        Assert.assertEquals(registrationConfirmation.getfirstname(),testdata.firstname());
         registrationConfirmation.GoToFlightSearch();
     }
     @Test(dependsOnMethods="registrationconfirmationTest")
@@ -48,7 +46,7 @@ public class FlightReservationTest extends Abstarcttest {
         FlightSearchPage flightSearchPage=new FlightSearchPage(driver);
         Assert.assertTrue(flightSearchPage.isAt());
         log.info("noofpassengers");
-        flightSearchPage.Selectpassenger(noofpassenger);
+        flightSearchPage.Selectpassenger(testdata.passengersCount());
         flightSearchPage.SearchFlights();
     }
     @Test(dependsOnMethods="FlighsearchTest")
@@ -64,7 +62,7 @@ public class FlightReservationTest extends Abstarcttest {
         FlightConfirmationpage flightConfirmationpage=new FlightConfirmationpage(driver);
         Assert.assertTrue(flightConfirmationpage.isAt());
         Assert.assertEquals(flightConfirmationpage.getBookingConfirmationId(), "Total Price");
-        Assert.assertEquals(expectedprice, flightConfirmationpage.getTotalPrice());
+        Assert.assertEquals(testdata.expectedPrice(), flightConfirmationpage.getTotalPrice());
 
     }
 

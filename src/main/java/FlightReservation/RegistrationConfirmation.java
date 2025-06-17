@@ -10,6 +10,9 @@ public class RegistrationConfirmation extends AbstractPage {
     @FindBy(id="go-to-flights-search")
     private WebElement goToFlightSearchButton;
 
+    @FindBy(css = "#registration-confirmation-section p b")
+    private WebElement firstnameelement;
+
     public RegistrationConfirmation(WebDriver driver){
 
         super(driver);
@@ -18,6 +21,9 @@ public class RegistrationConfirmation extends AbstractPage {
     {
 
         this.goToFlightSearchButton.click();
+    }
+    public String getfirstname(){
+        return this.firstnameelement.getText();
     }
     @Override
     public boolean isAt(){
