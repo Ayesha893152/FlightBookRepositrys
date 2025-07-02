@@ -2,6 +2,7 @@
 <suite name="Flighttest" parallel="tests" thread-count="4">
     <test name="passengers-count-1">
         <parameter name="testDataPath" value="test-data/flightreservation/passenger-1.json"/>
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="tests.FlightReservationtest.FlightReservationTest"/>
         </classes>
@@ -9,20 +10,23 @@
 
     <test name="passengers-count-2">
         <parameter name="testDataPath" value="test-data/flightreservation/passenger-2.json"/>
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="tests.FlightReservationtest.FlightReservationTest"/>
         </classes>
     </test>
 
     <test name="passengers-count-3">
-        <parameter name="testDataPath" value="test-data/flightreservation/passenger-3.json"/>
+        <parameter name="testDataPath" value="test-data/flightreservation/passengers-3.json"/>
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="tests.FlightReservationtest.FlightReservationTest"/>
         </classes>
     </test>
 
     <test name="passengers-count-4">
-        <parameter name="testDataPath" value="test-data/flightreservation/passenger-4.json"/>
+        <parameter name="testDataPath" value="test-data/flightreservation/passengers-4.json"/>
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="tests.FlightReservationtest.FlightReservationTest"/>
         </classes>

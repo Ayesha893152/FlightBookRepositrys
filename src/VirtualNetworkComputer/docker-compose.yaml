@@ -1,0 +1,42 @@
+version: "3"
+services:
+  hub:
+    image: selenium/hub:4.32
+    ports:
+      - "4442:4442"
+      - "4443:4443"
+      - "4444:4444"
+
+  chrome:
+    image: selenium/node-chrome:4.32
+    depends_on:
+      - hub
+    shm_size: 2g
+    ports:
+      - "7900:7900"  # VNC to view browser
+    environment:
+      - SE_EVENT_BUS_HOST=hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+      - SE_NODE_MAX_SESSIONS=4
+      - SE_VNC_NO_PASSWORD=1
+      - SCREEN_WIDTH=1920
+      - SCREEN_HEIGHT=1080
+
+  firefox:
+    image: selenium/node-firefox:4.32
+    depends_on:
+      - hub
+    shm_size: 2g
+    ports:
+      - "7901:7900"  # VNC for Firefox (optional)
+    environment:
+      - SE_EVENT_BUS_HOST=hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+      - SE_NODE_MAX_SESSIONS=4
+      - SE_VNC_NO_PASSWORD=1
+      - SCREEN_WIDTH=1920
+      - SCREEN_HEIGHT=1080

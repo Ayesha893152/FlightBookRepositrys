@@ -2,6 +2,7 @@
 <suite name="Vendor portal" parallel="tests" thread-count="3">
     <test name="Vendor portal sam">
         <parameter name="testDataPath" value="test-data/Vendor-portal/sam.json"/>
+        <parameter name="browser" value="chrome"/>
 
         <classes>
             <class name="tests.Vendorportaltest.Vendorportaltest"/>
@@ -9,6 +10,7 @@
     </test>
     <test name="Vendor portal mike">
         <parameter name="testDataPath" value="test-data/Vendor-portal/mike.json"/>
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="tests.Vendorportaltest.Vendorportaltest"/>
         </classes>
@@ -16,6 +18,7 @@
 
     <test name="Vendor portal john">
         <parameter name="testDataPath" value="test-data/Vendor-portal/john.json"/>
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="tests.Vendorportaltest.Vendorportaltest"/>
         </classes>

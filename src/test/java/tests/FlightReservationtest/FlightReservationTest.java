@@ -1,7 +1,6 @@
 package tests.FlightReservationtest;
 
 import FlightReservation.*;
-import VendorPortal.model.VendorPortaltestdata;
 import VendorPortal.model.flightreservationtestdata;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,6 +9,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import tests.Abstarcttest;
+import util.Config;
+import util.Constants;
 import util.JsonUtil;
 
 public class FlightReservationTest extends Abstarcttest {
@@ -26,7 +27,7 @@ public class FlightReservationTest extends Abstarcttest {
     @Test
     public void userRegistrationTest(){
         RegistrationPage registrationPage=new RegistrationPage(driver);
-        registrationPage.goTo("https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html");
+        registrationPage.goTo(Config.get(Constants.FLIGHT_RESERVATION_URL));
         Assert.assertTrue(registrationPage.isAt());
         registrationPage.enteruserdetails(testdata.firstname(),testdata.lastname());
         registrationPage.enterusercredentials(testdata.email(),testdata.password());
