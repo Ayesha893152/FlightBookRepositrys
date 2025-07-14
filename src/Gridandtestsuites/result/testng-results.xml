@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="0" failed="0" skipped="9">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-14T10:47:32 GMT" name="Vendor portal" finished-at="2025-07-14T10:47:34 GMT" duration-ms="1952">
+    <groups>
+    </groups>
+    <test started-at="2025-07-14T10:47:32 GMT" name="Vendor portal mike" finished-at="2025-07-14T10:47:34 GMT" duration-ms="1952">
+      <class name="tests.Vendorportaltest.Vendorportaltest">
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@732c2a62]" started-at="2025-07-14T10:47:32 GMT" name="setDriver" finished-at="2025-07-14T10:47:34 GMT" duration-ms="1900" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7085c47f]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1c80277f33fb', ip: '172.18.0.5'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.1-microsoft-standard-WSL2', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1c80277f33fb', ip: '172.18.0.5'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.1-microsoft-standard-WSL2', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:562)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:110)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at tests.Abstarcttest.getLocalDriver(Abstarcttest.java:50)
+at tests.Abstarcttest.setDriver(Abstarcttest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "/root/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver": error=2, No such file or directory
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:195)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:208)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+... 24 more
+Caused by: java.io.IOException: Cannot run program "/root/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver": error=2, No such file or directory
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:193)
+... 27 more
+Caused by: java.io.IOException: error=2, No such file or directory
+at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:295)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:225)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setpageobjects(java.lang.String)[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@732c2a62]" started-at="2025-07-14T10:47:34 GMT" name="setpageobjects" finished-at="2025-07-14T10:47:34 GMT" depends-on-methods="tests.Abstarcttest.setDriver" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setpageobjects -->
+        <test-method signature="loginTest()[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@732c2a62]" started-at="2025-07-14T10:47:34 GMT" name="loginTest" finished-at="2025-07-14T10:47:34 GMT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1c80277f33fb', ip: '172.18.0.5'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.1-microsoft-standard-WSL2', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1c80277f33fb', ip: '172.18.0.5'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.1-microsoft-standard-WSL2', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:562)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:110)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at tests.Abstarcttest.getLocalDriver(Abstarcttest.java:50)
+at tests.Abstarcttest.setDriver(Abstarcttest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "/root/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver": error=2, No such file or directory
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:195)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:208)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+... 24 more
+Caused by: java.io.IOException: Cannot run program "/root/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver": error=2, No such file or directory
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:193)
+... 27 more
+Caused by: java.io.IOException: error=2, No such file or directory
+at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:295)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:225)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@732c2a62]" started-at="2025-07-14T10:47:34 GMT" name="sleep" finished-at="2025-07-14T10:47:34 GMT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="dashboardtest()[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@732c2a62]" started-at="2025-07-14T10:47:34 GMT" name="dashboardtest" finished-at="2025-07-14T10:47:34 GMT" depends-on-methods="tests.Vendorportaltest.Vendorportaltest.loginTest" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.Vendorportaltest.Vendorportaltest.dashboardtest() on instance tests.Vendorportaltest.Vendorportaltest@732c2a62 depends on not successfully finished methods 
+[tests.Vendorportaltest.Vendorportaltest.loginTest() on instance tests.Vendorportaltest.Vendorportaltest@732c2a62]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.Vendorportaltest.Vendorportaltest.dashboardtest() on instance tests.Vendorportaltest.Vendorportaltest@732c2a62 depends on not successfully finished methods 
+[tests.Vendorportaltest.Vendorportaltest.loginTest() on instance tests.Vendorportaltest.Vendorportaltest@732c2a62]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashboardtest -->
+        <test-method signature="logouttest()[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@732c2a62]" started-at="2025-07-14T10:47:34 GMT" name="logouttest" finished-at="2025-07-14T10:47:34 GMT" depends-on-methods="tests.Vendorportaltest.Vendorportaltest.dashboardtest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.Vendorportaltest.Vendorportaltest.logouttest() on instance tests.Vendorportaltest.Vendorportaltest@732c2a62 depends on not successfully finished methods 
+[tests.Vendorportaltest.Vendorportaltest.dashboardtest() on instance tests.Vendorportaltest.Vendorportaltest@732c2a62]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.Vendorportaltest.Vendorportaltest.logouttest() on instance tests.Vendorportaltest.Vendorportaltest@732c2a62 depends on not successfully finished methods 
+[tests.Vendorportaltest.Vendorportaltest.dashboardtest() on instance tests.Vendorportaltest.Vendorportaltest@732c2a62]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logouttest -->
+        <test-method is-config="true" signature="quitdriver()[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@732c2a62]" started-at="2025-07-14T10:47:34 GMT" name="quitdriver" finished-at="2025-07-14T10:47:34 GMT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitdriver -->
+      </class> <!-- tests.Vendorportaltest.Vendorportaltest -->
+    </test> <!-- Vendor portal mike -->
+    <test started-at="2025-07-14T10:47:32 GMT" name="Vendor portal sam" finished-at="2025-07-14T10:47:34 GMT" duration-ms="1952">
+      <class name="tests.Vendorportaltest.Vendorportaltest">
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@44a7bfbc]" started-at="2025-07-14T10:47:32 GMT" name="setDriver" finished-at="2025-07-14T10:47:34 GMT" duration-ms="1900" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@40ddc1cc]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1c80277f33fb', ip: '172.18.0.5'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.1-microsoft-standard-WSL2', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1c80277f33fb', ip: '172.18.0.5'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.1-microsoft-standard-WSL2', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:562)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:110)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at tests.Abstarcttest.getLocalDriver(Abstarcttest.java:50)
+at tests.Abstarcttest.setDriver(Abstarcttest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "/root/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver": error=2, No such file or directory
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:195)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:208)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+... 24 more
+Caused by: java.io.IOException: Cannot run program "/root/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver": error=2, No such file or directory
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:193)
+... 27 more
+Caused by: java.io.IOException: error=2, No such file or directory
+at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:295)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:225)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setpageobjects(java.lang.String)[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@44a7bfbc]" started-at="2025-07-14T10:47:34 GMT" name="setpageobjects" finished-at="2025-07-14T10:47:34 GMT" depends-on-methods="tests.Abstarcttest.setDriver" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setpageobjects -->
+        <test-method signature="loginTest()[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@44a7bfbc]" started-at="2025-07-14T10:47:34 GMT" name="loginTest" finished-at="2025-07-14T10:47:34 GMT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1c80277f33fb', ip: '172.18.0.5'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.1-microsoft-standard-WSL2', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1c80277f33fb', ip: '172.18.0.5'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.1-microsoft-standard-WSL2', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:562)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:110)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at tests.Abstarcttest.getLocalDriver(Abstarcttest.java:50)
+at tests.Abstarcttest.setDriver(Abstarcttest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "/root/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver": error=2, No such file or directory
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:195)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:208)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+... 24 more
+Caused by: java.io.IOException: Cannot run program "/root/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver": error=2, No such file or directory
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:193)
+... 27 more
+Caused by: java.io.IOException: error=2, No such file or directory
+at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:295)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:225)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@44a7bfbc]" started-at="2025-07-14T10:47:34 GMT" name="sleep" finished-at="2025-07-14T10:47:34 GMT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="dashboardtest()[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@44a7bfbc]" started-at="2025-07-14T10:47:34 GMT" name="dashboardtest" finished-at="2025-07-14T10:47:34 GMT" depends-on-methods="tests.Vendorportaltest.Vendorportaltest.loginTest" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.Vendorportaltest.Vendorportaltest.dashboardtest() on instance tests.Vendorportaltest.Vendorportaltest@44a7bfbc depends on not successfully finished methods 
+[tests.Vendorportaltest.Vendorportaltest.loginTest() on instance tests.Vendorportaltest.Vendorportaltest@44a7bfbc]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.Vendorportaltest.Vendorportaltest.dashboardtest() on instance tests.Vendorportaltest.Vendorportaltest@44a7bfbc depends on not successfully finished methods 
+[tests.Vendorportaltest.Vendorportaltest.loginTest() on instance tests.Vendorportaltest.Vendorportaltest@44a7bfbc]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashboardtest -->
+        <test-method signature="logouttest()[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@44a7bfbc]" started-at="2025-07-14T10:47:34 GMT" name="logouttest" finished-at="2025-07-14T10:47:34 GMT" depends-on-methods="tests.Vendorportaltest.Vendorportaltest.dashboardtest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.Vendorportaltest.Vendorportaltest.logouttest() on instance tests.Vendorportaltest.Vendorportaltest@44a7bfbc depends on not successfully finished methods 
+[tests.Vendorportaltest.Vendorportaltest.dashboardtest() on instance tests.Vendorportaltest.Vendorportaltest@44a7bfbc]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.Vendorportaltest.Vendorportaltest.logouttest() on instance tests.Vendorportaltest.Vendorportaltest@44a7bfbc depends on not successfully finished methods 
+[tests.Vendorportaltest.Vendorportaltest.dashboardtest() on instance tests.Vendorportaltest.Vendorportaltest@44a7bfbc]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logouttest -->
+        <test-method is-config="true" signature="quitdriver()[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@44a7bfbc]" started-at="2025-07-14T10:47:34 GMT" name="quitdriver" finished-at="2025-07-14T10:47:34 GMT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitdriver -->
+      </class> <!-- tests.Vendorportaltest.Vendorportaltest -->
+    </test> <!-- Vendor portal sam -->
+    <test started-at="2025-07-14T10:47:32 GMT" name="Vendor portal john" finished-at="2025-07-14T10:47:34 GMT" duration-ms="1952">
+      <class name="tests.Vendorportaltest.Vendorportaltest">
+        <test-method is-config="true" signature="SetupConfig()[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@41fecb8b]" started-at="2025-07-14T10:47:32 GMT" name="SetupConfig" finished-at="2025-07-14T10:47:32 GMT" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupConfig -->
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@41fecb8b]" started-at="2025-07-14T10:47:32 GMT" name="setDriver" finished-at="2025-07-14T10:47:34 GMT" duration-ms="1900" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2493631d]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1c80277f33fb', ip: '172.18.0.5'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.1-microsoft-standard-WSL2', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1c80277f33fb', ip: '172.18.0.5'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.1-microsoft-standard-WSL2', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:562)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:110)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at tests.Abstarcttest.getLocalDriver(Abstarcttest.java:50)
+at tests.Abstarcttest.setDriver(Abstarcttest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "/root/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver": error=2, No such file or directory
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:195)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:208)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+... 24 more
+Caused by: java.io.IOException: Cannot run program "/root/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver": error=2, No such file or directory
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:193)
+... 27 more
+Caused by: java.io.IOException: error=2, No such file or directory
+at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:295)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:225)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setpageobjects(java.lang.String)[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@41fecb8b]" started-at="2025-07-14T10:47:34 GMT" name="setpageobjects" finished-at="2025-07-14T10:47:34 GMT" depends-on-methods="tests.Abstarcttest.setDriver" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setpageobjects -->
+        <test-method signature="loginTest()[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@41fecb8b]" started-at="2025-07-14T10:47:34 GMT" name="loginTest" finished-at="2025-07-14T10:47:34 GMT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1c80277f33fb', ip: '172.18.0.5'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.1-microsoft-standard-WSL2', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: '1c80277f33fb', ip: '172.18.0.5'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.1-microsoft-standard-WSL2', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:562)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:110)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at tests.Abstarcttest.getLocalDriver(Abstarcttest.java:50)
+at tests.Abstarcttest.setDriver(Abstarcttest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Cannot run program "/root/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver": error=2, No such file or directory
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:195)
+at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:208)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:117)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+... 24 more
+Caused by: java.io.IOException: Cannot run program "/root/.cache/selenium/chromedriver/linux64/138.0.7204.94/chromedriver": error=2, No such file or directory
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+at org.openqa.selenium.os.ExternalProcess$Builder.start(ExternalProcess.java:193)
+... 27 more
+Caused by: java.io.IOException: error=2, No such file or directory
+at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:295)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:225)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@41fecb8b]" started-at="2025-07-14T10:47:34 GMT" name="sleep" finished-at="2025-07-14T10:47:34 GMT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="dashboardtest()[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@41fecb8b]" started-at="2025-07-14T10:47:34 GMT" name="dashboardtest" finished-at="2025-07-14T10:47:34 GMT" depends-on-methods="tests.Vendorportaltest.Vendorportaltest.loginTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.Vendorportaltest.Vendorportaltest.dashboardtest() on instance tests.Vendorportaltest.Vendorportaltest@41fecb8b depends on not successfully finished methods 
+[tests.Vendorportaltest.Vendorportaltest.loginTest() on instance tests.Vendorportaltest.Vendorportaltest@41fecb8b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.Vendorportaltest.Vendorportaltest.dashboardtest() on instance tests.Vendorportaltest.Vendorportaltest@41fecb8b depends on not successfully finished methods 
+[tests.Vendorportaltest.Vendorportaltest.loginTest() on instance tests.Vendorportaltest.Vendorportaltest@41fecb8b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashboardtest -->
+        <test-method signature="logouttest()[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@41fecb8b]" started-at="2025-07-14T10:47:34 GMT" name="logouttest" finished-at="2025-07-14T10:47:34 GMT" depends-on-methods="tests.Vendorportaltest.Vendorportaltest.dashboardtest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.Vendorportaltest.Vendorportaltest.logouttest() on instance tests.Vendorportaltest.Vendorportaltest@41fecb8b depends on not successfully finished methods 
+[tests.Vendorportaltest.Vendorportaltest.dashboardtest() on instance tests.Vendorportaltest.Vendorportaltest@41fecb8b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.Vendorportaltest.Vendorportaltest.logouttest() on instance tests.Vendorportaltest.Vendorportaltest@41fecb8b depends on not successfully finished methods 
+[tests.Vendorportaltest.Vendorportaltest.dashboardtest() on instance tests.Vendorportaltest.Vendorportaltest@41fecb8b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logouttest -->
+        <test-method is-config="true" signature="quitdriver()[pri:0, instance:tests.Vendorportaltest.Vendorportaltest@41fecb8b]" started-at="2025-07-14T10:47:34 GMT" name="quitdriver" finished-at="2025-07-14T10:47:34 GMT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitdriver -->
+      </class> <!-- tests.Vendorportaltest.Vendorportaltest -->
+    </test> <!-- Vendor portal john -->
+  </suite> <!-- Vendor portal -->
+</testng-results>
