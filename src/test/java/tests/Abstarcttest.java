@@ -27,6 +27,7 @@ public abstract class Abstarcttest {
     @BeforeSuite
     public void SetupConfig(){
         Config.initialize();
+
     }
 
     @BeforeTest

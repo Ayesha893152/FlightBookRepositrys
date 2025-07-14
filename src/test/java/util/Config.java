@@ -36,15 +36,25 @@ public class Config {
 
     private static Properties loadProperties() {
         Properties properties = new Properties();
-        try (InputStream stream = ResourceLoader.getresources(DEFAULT_PROPERTIES)) {
+
+        // Get config path from system property or fallback to default
+        String configPath = System.getProperty("config.path", DEFAULT_PROPERTIES);
+
+        try (InputStream stream = Config.class.getClassLoader().getResourceAsStream(configPath)) {
             if (stream == null) {
-                throw new RuntimeException("Properties file not found in classpath: config/default.properties");
+                String msg = "Properties file not found in classpath: " + configPath;
+                log.error(msg);
+                throw new RuntimeException(msg);
             }
+
             properties.load(stream);
+            log.info("Loaded properties from: {}", configPath);
+
         } catch (Exception e) {
-            log.error("Unable to read the properties file: config/default.properties", e);
-            throw new RuntimeException("Failed to load properties", e);
+            log.error("Unable to read the properties file: {}", configPath, e);
+            throw new RuntimeException("Failed to load properties from " + configPath, e);
         }
+
         return properties;
     }
 }
