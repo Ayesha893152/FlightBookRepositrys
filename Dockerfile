@@ -5,8 +5,7 @@ WORKDIR /home/selenium-docker
 
 #add the required files to run test
 ADD target/docker-resources ./
-ADD Runner.sh      Runner.sh
+ADD src/test/resources/Runner.sh      Runner.sh
 
 # Fix for windows
 RUN dos2unix runner.sh
-
