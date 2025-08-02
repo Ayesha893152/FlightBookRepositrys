@@ -8,16 +8,18 @@ pipeline{
 			}
 
 		}
-		stage('stage-2'){
+		stage('Build image'){
 			steps{
-				echo "building docker image"
+				bat 'docker build -t ayesha715/flight-booking-app .'
+                bat 'docker login -u ayesha715 -p <Test@1234>'
+
 
 			}
 
 		}
-		stage('stage-3'){
+		stage('Push image'){
 			steps{
-				echo "push docker image"
+				bat 'docker push ayesha715/flight-booking-app'
 
 			}
 
