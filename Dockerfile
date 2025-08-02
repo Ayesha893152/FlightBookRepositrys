@@ -5,17 +5,10 @@ WORKDIR /home/selenium-docker
 
 #add the required files to run test
 ADD target/docker-resources ./
+ADD Runner.sh      Runner.sh
 
-#Environment variable
-#Browser
-#HubHost
-#TEST_SUITE
-#THREAD_COUNT
+# Fix for windows
+RUN dos2unix runner.sh
 
 #issue the command to run the test
-ENTRYPOINT java -cp 'libs/*' \
- -Dselenium.grid.enabled=${HUB_HOST} \
-  -Dselenium.grid.hubHost=${Browser}
-  org.testng.TestNG \
-  -threadcount ${THREAD_COUNT} \
-   test-suites/${TEST_SUITE}
+ENTRYPOINT sh Runner.sh
