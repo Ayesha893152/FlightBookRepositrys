@@ -8,4 +8,4 @@ ADD target/docker-resources ./
 ADD src/test/resources/Runner.sh      Runner.sh
 
 # Fix for windows
-RUN dos2unix runner.sh
+RUN dos2unix Runner.sh
