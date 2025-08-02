@@ -10,7 +10,7 @@ pipeline{
 		}
 		stage('stage-2'){
 			steps{
-				bat "building docker image"
+				echo "building docker image"
 
 			}
 
