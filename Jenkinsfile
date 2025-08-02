@@ -10,14 +10,14 @@ pipeline{
 		}
 		stage('Build image'){
 			steps{
-				sh "docker build -t=aisha/seleniumdocker ."
+				echo "build image"
 
 			}
 
 		}
 		stage('push image'){
 			steps{
-				sh "docker push aisha/seleniumdocker"
+				echo "push image"
 
 			}
 
