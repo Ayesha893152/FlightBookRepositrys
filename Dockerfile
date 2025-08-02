@@ -10,5 +10,3 @@ ADD Runner.sh      Runner.sh
 # Fix for windows
 RUN dos2unix runner.sh
 
-#issue the command to run the test
-ENTRYPOINT sh Runner.sh
