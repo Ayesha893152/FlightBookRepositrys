@@ -8,16 +8,16 @@ pipeline{
 			}
 
 		}
-		stage('Build image'){
+		stage('stage-2'){
 			steps{
-				echo "build image"
+				echo "building docker image"
 
 			}
 
 		}
-		stage('push image'){
+		stage('stage-3'){
 			steps{
-				echo "push image"
+				echo "push docker image"
 
 			}
 
