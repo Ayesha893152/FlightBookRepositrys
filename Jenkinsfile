@@ -8,8 +8,11 @@ pipeline{
 			}
 
 		}
-		stage('Prepare runner script'){
+		stage('Prepare runner script')
+		{
+			steps{
 			bat 'copy src\\test\\resources\\runner.sh .'
+			}
 		}
 		stage('Build image'){
 			steps{
