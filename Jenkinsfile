@@ -20,7 +20,7 @@ pipeline{
 		}
 		stage('Push image'){
 			steps{
-				bat 'docker push ayesha715/flight-booking-app'
+				bat 'docker push aishasaif390@gmail.com/flight-booking-app'
 
 			}
 
