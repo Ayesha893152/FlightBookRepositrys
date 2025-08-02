@@ -2,9 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/01-Jenkins/volumes/Node/workspace/Selenium_docker" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/01-Jenkins/volumes/master/caches/git-b4d1d11d66a73f8817c6a68ea06b8bc8" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/01-Jenkins/volumes/master/workspace/PIPE_LINE_DEMO" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/01-Jenkins/volumes/master/workspace/Selenium_docker_build" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/01-Jenkins/volumes/master/workspace/Selenium_docker_builds" vcs="Git" />
   </component>
 </project>
