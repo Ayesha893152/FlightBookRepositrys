@@ -12,7 +12,7 @@ pipeline{
 		stage('Build image'){
 			steps{
 				bat 'docker build -t ayesha715/flight-booking-app .'
-                bat 'docker login -u ayesha715 -p <Test@1234>'
+                                bat 'docker login -u aishasaif390@gmail.com -p <Test@1234>'
 
 
 			}
