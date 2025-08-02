@@ -8,12 +8,7 @@ pipeline{
 			}
 
 		}
-		stage('Prepare runner script')
-		{
-			steps{
-			bat 'copy src\\test\\resources\\runner.sh .'
-			}
-		}
+		
 		stage('Build image'){
 			steps{
 				bat 'docker build -t ayesha715/flight-booking-app .'
