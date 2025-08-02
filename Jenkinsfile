@@ -4,13 +4,13 @@ pipeline{
 	stages{
 		stage('Build jar'){
 			steps{
-				sh "mvn clean package -DskipTest"
+				bat "mvn clean -DskipTest"
 			}
 
 		}
 		stage('stage-2'){
 			steps{
-				echo "building docker image"
+				bat "building docker image"
 
 			}
 
